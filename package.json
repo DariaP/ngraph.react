@@ -1,0 +1,22 @@
+{
+  "name": "ngraph.react",
+  "version": "0.1.4",
+  "description": "react components for ngraph",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DariaP/ngraph.react"
+  },
+  "author": "Daria Kashcha <dashka.kh@gmail.com> (https://github.com/DariaP)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DariaP/ngraph.react/issues"
+  },
+  "homepage": "https://github.com/DariaP/ngraph.react",
+  "dependencies": {
+    "react": "^0.13.2"
+  }
+}
