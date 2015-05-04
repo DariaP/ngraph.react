@@ -1,9 +1,11 @@
 var renderSvg = require('ngraph.svg'),
     React = require('react'),
-    ngraph = require('ngraph.react'),
+    ngraph = require('../../index.js'),
     circularLayout = require('ngraph.circular.fixed');
 
-var Graph = ngraph.Graph;
+var Graph = ngraph.Graph,
+    NodeView = ngraph.NodeView,
+    Rect = ngraph.Rect;
 
 function getGraphFromQueryString(query) {
   var graphGenerators = require('ngraph.generators');
@@ -27,6 +29,9 @@ var graph = getGraphFromQueryString(query),
 
 React.render(
   <Graph graph={graph} layout={layout} renderer={renderSvg} >
+    <NodeView>
+      <Rect color={"#000000"} width={10} height={10} />
+    </NodeView>
   </Graph>,
   document.getElementById('content')
 );
