@@ -6,5 +6,6 @@ module.exports = {
   Graph: graph,
   NodeView: nodeView.NodeView,
   Rect: nodeView.Rect,
+  Text: nodeView.Text,
   LinkView: linkView.LinkView
 };
